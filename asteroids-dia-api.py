@@ -2,6 +2,10 @@ from flask import Flask, request, jsonify
 import numpy as np
 import tensorflow as tf
 import pandas as pd
+import os
+
+# Disable GPU
+os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 
 app = Flask(__name__)
 
