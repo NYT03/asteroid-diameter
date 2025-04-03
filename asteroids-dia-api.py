@@ -67,4 +67,5 @@ def predict():
         return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # Bind to all available interfaces and specify port 5000
+    app.run(host='0.0.0.0', port=5000, debug=True)
