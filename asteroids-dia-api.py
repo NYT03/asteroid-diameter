@@ -6,7 +6,7 @@ import pandas as pd
 app = Flask(__name__)
 
 # Load the saved model
-model = tf.keras.models.load_model(r"C:\Life Projects\nasa space app challenge\asteroids-diameter\modell.h5")
+model = tf.keras.models.load_model(r"./modell.h5")
 
 def predict_diameter(input_dict):
     # Create a DataFrame from the input dictionary
